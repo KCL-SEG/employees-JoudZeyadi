@@ -32,13 +32,13 @@ class Employee():
         if self.monthHour == "month" and self.commission == 0:
             string = f"{self.name} works on a monthly salary of {self.get_pay()}.  Their total pay is {self.get_pay()}."
         elif self.monthHour == "month" and self.commission == 1:
-            string = f"{self.name} works on a monthly salary of {self.get_pay()} and receives a commission for {self.cContract} contract (s) at {self.cContractWage}/contract.  Their total pay is {self.get_pay()}."
+            string = f"{self.name} works on a monthly salary of {self.get_pay()} and receives a commission for {self.cContract} contract(s) at {self.cContractWage}/contract.  Their total pay is {self.get_pay()}."
         elif self.monthHour == "month" and self.commission == 2:
             string = f"{self.name} works on a monthly salary of {self.salary} and receives a bonus commission of {self.bCommission}.  Their total pay is {self.get_pay()}."
         elif self.monthHour == "hour" and self.commission == 0:
             string = f"{self.name} works on a contract of {self.hours} hours at {self.wage}/hour.  Their total pay is {self.get_pay()}."
         elif self.monthHour == "hour" and self.commission == 1:
-            string = f"{self.name} works on a contract of {self.hours} hours at {self.wage}/hour. and receives a commission for {self.cContract} contract(s) at {self.cContractWage}/contract.  Their total pay is {self.get_pay()}."
+            string = f"{self.name} works on a contract of {self.hours} hours at {self.wage}/hour and receives a commission for {self.cContract} contract(s) at {self.cContractWage}/contract.  Their total pay is {self.get_pay()}."
         elif self.monthHour == "hour" and self.commission == 2:
             string = f"{self.name} works on a contract of {self.hours} hours at {self.wage}/hour and receives a bonus commission of {self.bCommission}.  Their total pay is {self.get_pay()}."
         return string
