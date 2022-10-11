@@ -2,7 +2,6 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee():
-    def __init__(self, name):
     def __init__(self, name, salary, monthHour, hours, wage, commission, cContract, cContractWage, bCommission):
         self.name = name
         self.salary = salary
@@ -15,7 +14,6 @@ class Employee():
         self.bCommission = bCommission
 
     def get_pay(self):
-        pass
         if self.monthHour == "month" and self.commission == 0:
             return self.salary
         elif self.monthHour == "month" and self.commission == 1:
@@ -31,7 +29,6 @@ class Employee():
 
 
     def __str__(self):
-        string = self.name
         if self.monthHour == "month" and self.commission == 0:
             string = f"{self.name} works on a monthly salary of {self.get_pay()}. Their total pay is {self.get_pay()}."
         elif self.monthHour == "month" and self.commission == 1:
